@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:id="@+id/tabctrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/bottom_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#fff"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/tabitem1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onTabItemClick"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="27dp">
+
+                    <ImageView
+                        android:id="@+id/main_tab_newsImageView1"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/tabitem_1_selector"
+                        android:contentDescription="@string/app_name"
+                        android:duplicateParentState="true" />
+
+                    <TextView
+                        android:id="@+id/tv_message_number1"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toRightOf="@+id/main_tab_newsImageView1"
+                        android:background="@drawable/shape_usercenter_message_dot"
+                        android:padding="2dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tabitem_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:duplicateParentState="true"
+                    android:text="首页"
+                    android:textColor="@drawable/tab_text_item"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            //
+
+            <LinearLayout
+                android:id="@+id/tabitem2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onTabItemClick"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="27dp">
+
+                    <ImageView
+                        android:id="@+id/main_tab_newsImageView"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/tabitem_2_selector"
+                        android:contentDescription="@string/app_name"
+                        android:duplicateParentState="true" />
+
+                    <TextView
+                        android:id="@+id/tv_message_number2"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toRightOf="@+id/main_tab_newsImageView"
+                        android:background="@drawable/shape_usercenter_message_dot"
+                        android:padding="2dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tabitem_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:duplicateParentState="true"
+                    android:text="活动"
+                    android:textColor="@drawable/tab_text_item"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tabitem3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onTabItemClick"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="27dp">
+
+
+                    <ImageView
+                        android:id="@+id/main_tab_circleImageView"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/tabitem_3_selector"
+                        android:contentDescription="@string/app_name"
+                        android:duplicateParentState="true" />
+
+                    <TextView
+                        android:id="@+id/tv_message_number3"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toRightOf="@+id/main_tab_circleImageView"
+                        android:background="@drawable/shape_usercenter_message_dot"
+                        android:padding="2dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tabitem_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:duplicateParentState="true"
+                    android:text="关注"
+                    android:textColor="@drawable/tab_text_item"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tabitem4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onTabItemClick"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="27dp">
+
+                    <ImageView
+                        android:id="@+id/main_tab_courseImageView"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/tabitem_4_selector"
+                        android:contentDescription="@string/app_name"
+                        android:duplicateParentState="true" />
+
+                    <TextView
+                        android:id="@+id/tv_message_number4"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toRightOf="@+id/main_tab_courseImageView"
+                        android:background="@drawable/shape_usercenter_message_dot"
+                        android:padding="2dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tabitem_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="个人中心"
+                    android:textColor="@drawable/tab_text_item"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.myapplication.domain.view.DisableScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabctrl"
+        android:layout_alignParentTop="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/guide_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/white_box_with_corners"
+            android:gravity="center"
+            android:text="摩iNS"
+            android:textColor="#333333" />
+
+
+        <ImageView
+            android:id="@+id/icon_tri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/icon_triangle" />
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/icon_tri"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:background="#11ffffff">
+
+            <ImageView
+                android:id="@+id/bg_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_bg_times_guite" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="在此分享"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="你的欢乐时刻"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/white_strike_box_with_corners"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="我知道了"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:src="@mipmap/ic_launcher" />
+    </RelativeLayout>
+</RelativeLayout>
+
