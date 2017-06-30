@@ -28,4 +28,24 @@
         <attr name="gtsTagMinHeight" format="dimension" />
         <attr name="gtsCenterGap" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="UserFaceWithTagView">
+        <attr name="main_img_src" format="reference|color"></attr>
+        <attr name="main_img_radius" format="dimension"></attr>
+        <attr name="tag_img_src" format="reference|color"></attr>
+        <attr name="tag_img_radius" format="dimension"></attr>
+        <attr name="main_boder_color" format="reference|color"></attr>
+        <attr name="main_boder_width" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="Emojicon">
+        <attr name="emojiconSize" format="dimension" />
+        <attr name="emojiconAlignment" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="baseline" value="1" />
+        </attr>
+        <attr name="emojiconTextStart" format="integer" />
+        <attr name="emojiconTextLength" format="integer" />
+        <attr name="emojiconUseSystemDefault" format="boolean" />
+    </declare-styleable>
 </resources>

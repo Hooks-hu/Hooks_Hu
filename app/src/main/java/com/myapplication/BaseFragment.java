@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 /**
  * Created by Administrator on 2017/6/9.
@@ -21,11 +20,22 @@ public class BaseFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_base_layout, container, false);
     }
+//    @Override
+//    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+//        super.onViewCreated(view, savedInstanceState);
+//        TextView textView = (TextView) view.findViewById(R.id.tv_content);
+//        String name = getArguments().getString(EXTRA_NAME);
+//        textView.setText(name);
+//    }
+
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        TextView textView = (TextView) view.findViewById(R.id.tv_content);
-        String name = getArguments().getString(EXTRA_NAME);
-        textView.setText(name);
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        initView(this.getView());
+    }
+
+    protected void initView(View view) {
+
+
     }
 }

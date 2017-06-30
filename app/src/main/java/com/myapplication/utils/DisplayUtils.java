@@ -7,7 +7,9 @@ import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.ViewConfiguration;
 import android.view.WindowManager;
+
 import com.myapplication.MyApplication;
+
 import java.lang.reflect.Field;
 
 public class DisplayUtils {

@@ -2,7 +2,6 @@ package com.myapplication.domain.user;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,10 +30,11 @@ public class UserFragment extends BaseFragment {
         return inflater.inflate(R.layout.fragment_base_layout,container,false);
     }
 
+
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        TextView tv_content = (TextView) getView().findViewById(R.id.tv_content);
+    protected void initView(View view) {
+        super.initView(view);
+        TextView tv_content = (TextView) view.findViewById(R.id.tv_content);
         tv_content.setText("个人");
     }
 }

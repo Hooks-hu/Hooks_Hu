@@ -24,7 +24,6 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setupBackAsUp("设置");
-
         initView();
     }
 
