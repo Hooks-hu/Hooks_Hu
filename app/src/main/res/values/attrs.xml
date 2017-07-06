@@ -48,4 +48,13 @@
         <attr name="emojiconTextLength" format="integer" />
         <attr name="emojiconUseSystemDefault" format="boolean" />
     </declare-styleable>
+
+    <!-- ViewPagerLineIndicator 指示器的样式 -->
+    <declare-styleable name="ViewPagerLineIndicator">
+        <attr name="item_color"/>
+        <attr name="item_count" />
+    </declare-styleable>
+
+    <attr name="item_count" format="integer"></attr>
+    <attr name="item_color" format="color"></attr>
 </resources>

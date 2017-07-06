@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import com.myapplication.domain.Find.FindFragment;
 import com.myapplication.domain.event.EventFragment;
-import com.myapplication.domain.home.HomeFragment;
+import com.myapplication.domain.MainHome;
 import com.myapplication.domain.user.UserFragment;
 
 import java.util.ArrayList;
@@ -45,7 +45,7 @@ public class Home2FragmentAdapter extends FragmentPagerAdapter {
         Fragment fragment = null;
         switch (position) {
             case 0:
-                fragment = new HomeFragment();
+                fragment = new MainHome();
                 break;
             case 1:
                 fragment = new EventFragment();

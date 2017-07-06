@@ -37,4 +37,12 @@ public class BaseConst {
     public static final String XIAOMOSTARTLIST_URL = BASE_SERVER_ENTRY + "/hooks/xiaomostartlist.json";
     // home界面星级推荐列表
     public static final String STARTRECOMAD_URL = BASE_SERVER_ENTRY + "/hooks/startRecomad.json";
+
+
+    public interface  PermissionContent{// 获取各种选限时的文案
+        public final static String PERMISSTION_RECORDER = "当前应用缺少必要的权限,录音权限或者读取存储权限(录音,照片,视频等需要),该功能暂时无法使用。如若需要，请单击【确定】按钮前往设置中心进行权限授权。";
+        public final static String PERMISSTION_PIC = "当前应用缺少必要的权限,拍照或者读取存储权限(录音,照片,视频等需要),该功能暂时无法使用。如若需要，请单击【确定】按钮前往设置中心进行权限授权。";
+        public final static String PERMISSTION_VIDEO = "当前应用缺少必要的权限,录像、录音或者读取存储权限(录音,照片,视频等需要),该功能暂时无法使用。如若需要，请单击【确定】按钮前往设置中心进行权限授权。";
+        public final static String PERMISSTION_STORAGE = "当前应用缺少读取存储权限(录音,照片,视频等需要),该功能暂时无法使用。如若需要，请单击【确定】按钮前往设置中心进行权限授权。";
+    }
 }

@@ -22,7 +22,6 @@ import com.myapplication.R;
 import com.myapplication.base.BaseConst;
 import com.myapplication.base.BaseResult;
 import com.myapplication.base.HttprequestListener;
-import com.myapplication.bean.FeedsDetailRxBusResponse;
 import com.myapplication.domain.http.GsonParseUtil;
 import com.myapplication.utils.NavigateUtils;
 
@@ -229,11 +228,7 @@ public class HomeFragment extends BaseFragment implements HttprequestListener, L
     public void onItemClick(HomeListDataResponse response2, int position) {
         HomeListDataResponse response = mList.get(position);
         if (response.getTechtype() == 5 ||response.getTechtype() == 10 || response.getTechtype() == 20){
-            FeedsDetailRxBusResponse parames = new FeedsDetailRxBusResponse();
-            parames.setTid(response.getTid());
-            parames.setPosition(position);
-            parames.setPage_tag(mPagename);
-            NavigateUtils.navigateToFeedINSDatail(getActivity(),parames);
+            NavigateUtils.navigateToFeedINSDatail(getActivity(),response);
         } else {
             if (response.getTechtype() == 30){
                 NavigateUtils.navigateToActivityDetail(getActivity(), response.getTid(),response.getUid(),response);
