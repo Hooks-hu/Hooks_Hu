@@ -38,6 +38,31 @@
         <activity
             android:name=".domain.feeddetatil.PlayActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".domain.view.photoselector.video.VideoListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".domain.view.photoselector.recordervideo.CameraActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".domain.view.photoselector.AlbumListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <!-- 相册使用 -->
+        <activity
+            android:name=".domain.view.photoselector.AlbumGridActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <activity
+            android:name=".domain.view.photoselector.videocut.VideoPreviewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="VideoEditActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

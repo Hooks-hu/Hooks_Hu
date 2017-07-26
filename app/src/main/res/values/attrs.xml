@@ -57,4 +57,11 @@
 
     <attr name="item_count" format="integer"></attr>
     <attr name="item_color" format="color"></attr>
+
+    <declare-styleable name="MovieRecorderView">
+        <attr name="movie_width" format="integer"/>
+        <attr name="movie_height" format="integer"/>
+        <attr name="is_open_camera" format="boolean"/>
+        <attr name="record_max_time" format="integer"/>
+    </declare-styleable>
 </resources>

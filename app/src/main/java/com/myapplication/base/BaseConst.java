@@ -17,7 +17,7 @@ public class BaseConst {
     public static String MY_SN = "7a4391b1577179f3063632c3ea486ba5";
     public static final String LOG_PREFIX = "somall_template_";
     public static final boolean isDebug = false;// 是否为debug版本,上线改为false
-
+    public static final String CHOICE_VIDEO_SUC = "user_choice_video_suc";
     // IsFirstIn
     public static final String IS_FIRST_IN_CODE= "isfirstin_code1900";
     // IsFirstIn
@@ -27,6 +27,7 @@ public class BaseConst {
     //表情集合
     public static List<EmojiResponse> mEmojiList = new ArrayList<EmojiResponse>();
 
+    public static int IS_MOINS_PAGE = 0;
     //服务入口
     public  static  String  BASE_SERVER_ENTRY = "http://192.168.199.112:8080";
     // home界面Bannerjson
